@@ -1,0 +1,45 @@
+body{
+    margin: 0 auto;
+    background-color: #797932;
+}
+
+.header{
+    height: 10%;
+    margin-bottom: 5%;
+    background-color: #FF7940;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    max-height: 100%;
+}
+
+.sendEmail{
+    width: 30%;
+    height: 70%;
+    background-color: #FF7940;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.text{
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 60px;
+    left: 75px;
+    font-family: Inter;
+    /* font-size: 48px; */
+    /* font-weight: 800; */
+    /* line-height: 58.09px; */
+    text-align: center;    
+}
+
+.review{
+    position: relative;
+    top: 200px;
+}

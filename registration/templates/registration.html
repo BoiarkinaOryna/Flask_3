@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Registration
+{% endblock %}
+
+{% block content %}
+    <header class="header">
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/authorization">Authorization</a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Реєстрація</h1>
+            <form action="" method="post">
+                <p class="nameText">Username:</p>
+                <input name="name" type="text">
+                <p class="passwordText">Password:</p>
+                <input name="password" type="text">
+                <p class="confirmPasswordText">Confirm password:</p>
+                <input name="confirm_password" type="text">
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+    </main>
+{% endblock %}

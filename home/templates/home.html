@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('home.static', filename = 'home.css') }}">
+{% endblock %}
+
+{% block content %}
+    <header class="header">
+        <div class="links">
+            <a href="/registration">Registration</a>
+            <a href="/authorization">Authorization</a>
+            <a href="/user">User</a>
+        </div>
+    </header>
+    <main>
+        <img class = "background" src="{{ url_for('home.static', filename = 'images/background.jpg') }}" alt="">
+        <div class="sendEmail">
+            {% if not email_status %}
+                <h1 class="text">Напишіть, будь ласка, відгук</h1>
+                <form action="" method="post" class="review">
+                    <input type="text" name="username" placeholder="Enter your usename">
+                    <input type="text" name="email" placeholder="Enter your email">
+                    <textarea name="message" id=""></textarea>
+                    <button type="submit" class = "buttonSend">Надіслати</button>
+                </form>
+            {% endif %}
+            {% if email_status %}
+                <h1 class="text">Відгук успішно надіслано! Дякуємо Вам за Ваші старання і бажаємо приємних подорожей.</h1>
+                <button type="submit" class = "buttonSendAnother">Надіслати ще один відгук</button>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="{{ url_for('home.static', filename = 'js/home.js') }}"></script>
+{% endblock %}
