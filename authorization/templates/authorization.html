@@ -16,12 +16,13 @@
         </div>
     </header>
     <main>
-        <div>
-            <h1>Авторизація</h1>
+        <img src="{{ url_for('authorization.static', filename = 'images/background.jpg') }}" class="background">
+        <div class="main-window">
+            <h1 class="text">Авторизація</h1>
             <form action="" method="post">
-                <p class="nameText">Username</p>
+                <p class="name-text">Username</p>
                 <input type="text" class="name" name="name">
-                <p class="passwordText">Password</p>
+                <p class="password-text">Password</p>
                 <input type="text" class="password" name="password">
                 <button type="submit">Надіслати</button>
             </form>

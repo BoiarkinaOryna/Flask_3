@@ -4,6 +4,10 @@
     Registration
 {% endblock %}
 
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('registration.static', filename = 'registration.css') }}">
+{% endblock %}
+
 {% block content %}
     <header class="header">
         <div class="links">
@@ -12,15 +16,16 @@
         </div>
     </header>
     <main>
-        <div>
-            <h1>Реєстрація</h1>
+        <img src="{{ url_for('registration.static', filename = 'images/background.jpg') }}" class="background">
+        <div class="main-window" >
+            <h1 class="text">Реєстрація</h1>
             <form action="" method="post">
-                <p class="nameText">Username:</p>
+                <p class="name-text">Username:</p>
                 <input name="name" type="text">
-                <p class="passwordText">Password:</p>
+                <p class="password-text">Password:</p>
                 <input name="password" type="text">
-                <p class="confirmPasswordText">Confirm password:</p>
-                <input name="confirm_password" type="text">
+                <p class="confirm-password-text">Confirm password:</p>
+                <input name="confirm-password" type="text">
                 <button type="submit">Надіслати</button>
             </form>
         </div>
