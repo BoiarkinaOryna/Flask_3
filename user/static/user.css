@@ -8,7 +8,7 @@
 }
 
 .header{
-    background-color: #FF7940;
+    background-color: #362D28;
     width: 1440;
     height: 100;
     width: 100%;
@@ -16,6 +16,30 @@
     display: flex;
 }
 
-body{
-    margin: 0%;
+.links {
+    display: flex;
+    gap: 20px;
 }
+
+body{
+    margin: 0;
+}
+
+.main-window{
+    
+        width: 30%;
+        height: 70%;
+        background-color: #362D28;
+        border-radius: 50px;
+        margin: 0 auto;
+}
+
+.text, h2, h3 {
+    
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48.41px;
+        text-align: center;
+        color: #FFFFFF;;
+    }

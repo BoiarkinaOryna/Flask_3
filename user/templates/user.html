@@ -18,10 +18,10 @@
         <img src="{{ url_for('authorization.static', filename = 'images/background.jpg') }}" class="background">
         <div class="main-window">
             <h1 class="text">Ваш профіль</h1>
-            
-            <p>{{ current_user.name }}</p>
-            <p>{{ current_user.id }}</p>
-            <p>{{ current_user.password }}</p>
+            <h2>ID: {{ current_user.id }}</h2>
+            <h3>Username: {{ current_user.name }}</h3>
+            <h3>Password:{{ current_user.password }}</h3>
         </div>
     </main>
 {% endblock %}
+
