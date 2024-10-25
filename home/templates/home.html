@@ -20,13 +20,15 @@
         <img class = "background" src="{{ url_for('home.static', filename = 'images/background.jpg') }}" alt="">
         <div class="sendEmail">
             {% if not email_status %}
-                <h1 class="text">Напишіть, будь ласка, відгук</h1>
-                <form action="" method="post" class="review">
-                    <input type="text" name="username" placeholder="Enter your usename">
-                    <input type="text" name="email" placeholder="Enter your email">
-                    <textarea name="message" id=""></textarea>
-                    <button type="submit" class = "buttonSend">Надіслати</button>
-                </form>
+                <div class="review-auto-layout">
+                    <h1 class="text">Напишіть, будь ласка, відгук</h1>
+                    <form action="" method="post" class="review">
+                        <input type="text" name="username" placeholder="Enter your usename">
+                        <input type="text" name="email" placeholder="Enter your email">
+                        <textarea name="message" id=""></textarea>
+                        <button type="submit" class = "buttonSend">Надіслати</button>
+                    </form>
+                </div>
             {% endif %}
             {% if email_status %}
                 <h1 class="text">Відгук успішно надіслано! Дякуємо Вам за Ваші старання і бажаємо приємних подорожей.</h1>

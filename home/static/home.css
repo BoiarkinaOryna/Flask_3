@@ -6,7 +6,7 @@ body{
 .header{
     height: 10%;
     margin-bottom: 5%;
-    background-color: #FF7940;
+    background-color: #362D28;
 }
 
 .background{
@@ -19,27 +19,37 @@ body{
 }
 
 .sendEmail{
+    /* display: flex; */
     width: 30%;
     height: 70%;
-    background-color: #FF7940;
+    background-color: #362D28;
     border-radius: 50px;
     margin: 0 auto;
+    min-width: 300px;
+}
+
+.review-auto-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding: 0px, 10px, 0px, 10px; */
+    align-items: center;
 }
 
 .text{
     width: 60%;
     height: 10%;
-    position: relative;
+    /* position: relative; */
     top: 60px;
-    left: 75px;
+    /* left: 75px; */
     font-family: Inter;
-    /* font-size: 48px; */
-    /* font-weight: 800; */
-    /* line-height: 58.09px; */
-    text-align: center;    
+    text-align: center;
+    color: white;
 }
 
 .review{
-    position: relative;
-    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }

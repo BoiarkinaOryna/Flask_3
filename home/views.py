@@ -14,7 +14,7 @@ def render_home():
                     recipients=['boyarkina.ar@gmail.com'],
                     body = flask.request.form["message"]
                 )
-                # mail.send(msg)
+                mail.send(msg)
                 email_sended = True
                 print("home views")
             except:
