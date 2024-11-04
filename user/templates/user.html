@@ -13,14 +13,19 @@
         <div class="links">
             <a href="/">Home</a>
         </div>
+        <div class="image">
+            <img src="{{ url_for('authorization.static', filename = 'images/profile.png') }}" alt="">
+        </div>
     </header>
-    <main>
-        <img src="{{ url_for('authorization.static', filename = 'images/background.jpg') }}" class="background">
+    <main style="background-image: url({{ url_for('authorization.static', filename = 'images/background.jpg') }});">
         <div class="main-window">
             <h1 class="text">Ваш профіль</h1>
-            <h2>ID: {{ current_user.id }}</h2>
-            <h3>Username: {{ current_user.name }}</h3>
-            <h3>Password: {{ current_user.password }}</h3>
+            <h3>ID:</h3>
+            <h3>{{ current_user.id }}</h3>
+            <h3>Username:</h3>
+            <h3>{{ current_user.name }}</h3>
+            <h3>Password:</h3>
+            <h3>{{ current_user.password }}</h3>
         </div>
     </main>
 {% endblock %}

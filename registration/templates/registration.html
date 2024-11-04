@@ -14,9 +14,11 @@
             <a href="/">Home</a>
             <a href="/authorization">Authorization</a>
         </div>
+        <div class="image">
+            <img src="{{ url_for('registration.static', filename = 'images/profile.png') }}" alt="">
+        </div>
     </header>
-    <main>
-        <img src="{{ url_for('registration.static', filename = 'images/background.jpg') }}" class="background">
+    <main style="background-image: url({{ url_for('registration.static', filename = 'images/background.jpg') }});">
         <div class="main-window" >
             <h1 class="text">Реєстрація</h1>
             <form action="" method="post">
@@ -26,7 +28,7 @@
                 <input name="password" type="text">
                 <p class="confirm-password-text">Confirm password:</p>
                 <input name="confirm-password" type="text">
-                <button type="submit">Надіслати</button>
+                <button class="button-send" type="submit">Надіслати</button>
             </form>
         </div>
     </main>

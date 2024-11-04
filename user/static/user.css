@@ -1,45 +1,78 @@
-.background{
-    position: absolute;
-    z-index: -1;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    max-height: 100%;
+body{
+    margin: 0 auto;
+    background-color: #797932;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
-    background-color: #362D28;
-    width: 1440;
-    height: 100;
-    width: 100%;
-    max-width: 100%;
     display: flex;
+    height: 10%;
+    background-color: #302C2A;
+    justify-content: space-between;
+    padding: 0px 5%;
 }
 
-.links {
+.header .links{
     display: flex;
-    gap: 20px;
+    width: 35%;
+    gap: 5px;
+    height: 100%;
 }
 
-body{
-    margin: 0;
+.header .links a{
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    flex: 1;
+    font-size: x-large;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header .image img{
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 20%;
+}
+
+main{
+    background-size: cover;
+    display: flex;
+    height: 90%;
 }
 
 .main-window{
-    
-        width: 30%;
-        height: 70%;
-        background-color: #362D28;
-        border-radius: 50px;
-        margin: 0 auto;
+    display: flex;
+    width: 30%;
+    height: 70%;
+    background-color: #302C2A;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 0px 50px 50px 50px;
+    min-width: 150px;
+    min-height: 400px;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.text, h2, h3 {
-    
-        font-family: Inter;
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 48.41px;
-        text-align: center;
-        color: #FFFFFF;;
-    }
+.text{
+    font-family: Inter;
+    text-align: center;
+    color: white;
+    max-height: 100px;  
+}
+
+h3{
+    color: white;
+    font-family: Golos Text;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    text-align: center;  
+    margin: 0px;
+    width: 100%;
+}
