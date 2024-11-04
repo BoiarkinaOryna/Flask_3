@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Tour
+{% endblock %}
+
+{% block link %}
+    <link rel = "stylesheet" href = "{{ url_for('tour.static', filename = 'tour2.css')}}">
+{% endblock %}
+
+{% block content %}
+    <header class = "header">
+        <a class = "link" href="/">Home</a>
+        <img class = "avatar" src="{{ url_for('tour.static', filename = 'images/avatar.png')}}">
+    </header>
+    <main>
+        <div class = "item_tour">
+            <!-- <img class = "japan" src="{{ url_for('tour.static', filename = 'images/japan.jpg')}}"> -->
+            <h1 class = "title"> {{ tour.title }}
+            </h1>
+            <h3 class = "full_description">
+                {{ tour.full_description }}
+            </h3>
+            <div class = "number">
+                <h4>Дзвоніть:</h4>
+            <h5>+380 68 700 97 36</h5>
+            </div>
+            <div class = "apps">
+                <img class = "apps" src="{{ url_for('tour.static', filename = 'images/instagram.png')}}">
+                <img class = "apps" src="{{ url_for('tour.static', filename = 'images/telegram.png')}}">
+                <img class = "apps" src="{{ url_for('tour.static', filename = 'images/viber.png')}}">
+                <img class = "apps" src="{{ url_for('tour.static', filename = 'images/youtube.png')}}">
+            </div>
+        </div>
+        <img class = "trip" src="{{ url_for('tour.static', filename = 'images/' + tour.image )}}">
+    </main>
+{% endblock %}
+

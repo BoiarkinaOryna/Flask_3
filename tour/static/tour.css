@@ -1,0 +1,60 @@
+
+body{
+background-color: #E8EEAB;
+}
+.header{
+    position: relative;
+    height: 10%;
+    bottom: 8px;
+    background-color: #362D28;
+}
+.avatar{
+    position: relative;
+    width: 50px;
+    left: 1230px;
+    bottom: 50px;
+    border-radius: 25px;
+}
+.link{
+    color: white;
+    position: relative;
+    left: 30px;
+    font-size: 25px;
+
+    top: -10px;
+    text-decoration: none;
+}
+.title{
+    color: white;
+    position: relative;
+    text-align: center;
+    left: -20px;
+    bottom: 30px;
+    font-size: 20px;
+}
+.title2{
+    color:red;
+}
+.description{
+    color: white;
+    position: relative;
+    left: 350px;
+    word-break: break-all;
+    max-width: 680px;
+    bottom: 30px;
+    font-size: 15px;
+}
+.item_tour{
+    background-color: #362D28;
+    position: relative;
+    top: 30px;
+    border: solid #362D28 20px ;
+    left: -0px;
+}
+.japan{
+    position: relative;
+    height: 120px;
+    width: 220px;
+    top: -110px;
+    left: 30px;
+}
