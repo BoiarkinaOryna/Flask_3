@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Tour
+{% endblock %}
+
+{% block link %}
+    <link rel = "stylesheet" href = "{{ url_for('tour.static', filename = 'tour.css')}}">
+{% endblock %}
+
+{% block content %}
+    <header class = "header">
+        <a class = "link" href="/">Home</a>
+        <img class = "avatar" src="{{ url_for('tour.static', filename = 'images/avatar.png')}}">
+    </header>
+    <main>
+        {% for tour in tours %}
+        <div class = "item_tour">
+            <!-- <img class = "japan" src="{{ url_for('tour.static', filename = 'images/japan.jpg')}}"> -->
+            <h1 class = "title"><a href="{{ url_for ('tour.render_certain_tour', id = tour.id)}}">{{ tour.title }}</a>
+            </h1>
+            <h2 class = "description">
+                {{ tour.description }}
+            </h2>
+        </div>
+        <img class = "japan" src="{{ url_for('tour.static', filename = 'images/' + tour.image )}}">
+        {% endfor %}
+    </main>
+{% endblock %}

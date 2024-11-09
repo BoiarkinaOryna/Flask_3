@@ -1,4 +1,4 @@
-import flask_sqlalchemy, flask_migrate, flask, os, flask_login
+import flask, flask_migrate, flask_sqlalchemy, os
 
 main = flask.Flask(
     import_name = "main",
@@ -6,7 +6,6 @@ main = flask.Flask(
     template_folder = "templates",
     instance_path = os.path.abspath(__file__ + "/../instance")
 )
-
 main.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 
 DATABASE = flask_sqlalchemy.SQLAlchemy(

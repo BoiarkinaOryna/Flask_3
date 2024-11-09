@@ -1,5 +1,5 @@
 from .settings import main
-import home, registration, authorization, user
+import home, registration, authorization, user, tour
 
 home.home.add_url_rule(
     rule = '/',
@@ -28,3 +28,16 @@ user.user.add_url_rule(
     methods = ["GET", "POST"]
 )
 main.register_blueprint(blueprint = user.user)
+
+tour.tour.add_url_rule(
+     rule = "/tour",
+     view_func = tour.render_tour, 
+     methods = ["GET", "POST"]
+)
+
+tour.tour.add_url_rule(
+    rule = "/tour_url/<int:id>",
+    view_func = tour.render_certain_tour,
+    methods = ["GET", "POST"]
+)
+main.register_blueprint(blueprint = tour.tour)
